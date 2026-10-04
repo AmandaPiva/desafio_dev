@@ -5,9 +5,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
+    "dev:comissao": "tsx watch src/comissao/index.ts",
+    "dev:estoque": "tsx watch src/movimentacao_estoque/index.ts",
+    "dev:juros": "tsx watch src/calculo_juros/index.ts",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "test": "tsx --test \"src/**/*.test.ts\""
   },
   "keywords": [],
   "author": "",
